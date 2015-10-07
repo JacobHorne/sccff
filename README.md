@@ -1,2 +1,2 @@
-# sccff
-SC Center for Fathers and Families
+# site_template
+Basic site template for UI Students to use for new projects
