@@ -20,6 +20,7 @@ $tcolor:#231f20;
 $red:#a51414;
 $skyblue:#00bff3;
 $lgray:#f5f4f6;
+$leftbarblue:#39556c;
 /*Colors
 #faf8f8-white
 #0d1a25-Dark Blue
@@ -46,16 +47,21 @@ body{
 	}
 	h1{
 		font-style:"museo-sans";
+		font-size:1.4em;
 	}
 	h2{
 		font-style:"museo-sans";
+		font-size:1.2em;
 	}
 	article{
 		font-style:"museo-sans";
 	}
 	p{
 		font-style:"museo-sans";
+		font-size:1em;
+		font-weight: 500;
 	}
+
 }
 img{
 	max-width:100%;
@@ -64,61 +70,207 @@ img{
 	margin:none;
 }
 
-.container{
+/*********************************/
+.main_header{
 	display:block;
-	position:fixed;
-	padding:20px 0 20px 0;
 	background-color:$dblue;
-	width:100%;
-	top:0px;
-
-
-}
-/**********************************************/
-.sidebar_left{
-	display:block;
-	width:40%;
-	float:left;
-
-    ul{
-    	margin:0 0 0 5%;
-    	padding:0;
-    }
-
-	li{
-		display: none;
+	z-index: 1000;
+	a{
+		color:$offwhite;
+		text-align: left;
+	}
+	.backbutton{
+			font-size: 1em;
 		
 	}
-	li:first-child{
-		display:block;		
-		color:$offwhite;
-		margin:0 0 0 10%;		
-	}
-	a{
+}
 
-	}
-	a:visited{
-		color:$offwhite;
-	}
-	a:first-child{
+.fixed_header{
+	position:fixed;
+	background-color:$dblue;
+	left:0;
+	right:0;
+	top:0;
+	z-index:1000;
+	padding:0 0 10px 0;
+}
+
+
+.menu_icon{
+	display:block;
+	float:left;
+	a{
 		display:block;
-		padding:5px 20% 5px 20%;
-		width:60px;
-		font-weight:700;
-		font-size:1.4em;
-		border: 4px solid $offwhite;
+		text-align: center;
 	}
 }
+.button{
+   	border: 4px solid $offwhite;
+	font-style:"museo-sans";
+	font-weight:700;
+	font-size:1.4em;
+	padding:5px 5% 5px 5%;
+	margin:10px 0 0 5%;
+	}
+
+.button:hover{
+    background-color:$offwhite;
+    color:$dblue;
+    transition:0.3s ease;
+}
+
+.wrapper{
+    position: relative;
+    transition: left 0.5s;
+    left: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cat_nav_state .wrapper{
+    left: 100%;
+}
+
+
+.main_navigation{
+    background-color: $leftbarblue;
+    display: block;
+    position: fixed;
+    top: 0;
+    padding:0 10px 0 10px;
+    width: 80%;
+    z-index: 2000;
+    /* the right property is what is pushing the nav off of the screen to the left */
+    right: 100%;
+    bottom: 0;
+    /* this is what animates the transition from closed to open */
+    transition: right 0.5s;
+    ul{
+    	padding:20px 10px 20px 10px;
+    	margin-top:10px;
+    }
+    h2{
+    	display:inline-block;
+    	color:$offwhite;
+    	font-weight:500;
+		font-size: 1em;
+		border:2px solid $offwhite;
+		padding:5px;
+    }
+    li{
+    	display: block;
+    	text-align:left;
+		font-weight:500;
+		font-size: 1em;
+		border-bottom: 1px solid #767577;
+    }
+    li:hover{
+    	border-right: 5px solid $orange;
+    }
+
+    li:first-child{
+    	display:none;
+    }
+    li:last-child{
+		border:none;
+	}
+	li:last-child:hover{
+		border-right: 5px solid $orange;
+	}
+	a{
+		display:block;
+		color:#faf8f8;
+		padding:10px;
+	}
+	a:hover{
+		background-color: $offwhite;
+		color:$dblue;
+		transition:0.2s ease;
+	}
+}
+
+.cat_nav_state .main_navigation{
+    /*
+        When wrapper also has a class of "cat_nav_state", then the right value is 20%.
+        Because the nav is 80% wide, it appears fully on screen.
+    */
+    right: 20%;
+}
+
 /**********************************************/
 
 
-.donate_button_mobile{
+
+/**********************************************/
+/*********************************************/
+/*****FATHERHOOD STYLES *********************/
+.fatherhood_title{
+	h1{
+		font-size: .5em;
+		font-weight: 900;
+		color: $tcolor;
+	}
+	p{
+		font-size: 1em;
+		font-weight: 700;
+		color: $tcolor;
+	}
+
+}
+
+.fatherhood{
+	background-color:black;
+}
+
+.map{
+	margin:0 auto;
+}
+
+.program_locations{
+	div{
+		margin-top:100px;	
+	}
+	h2{
+
+	}
+	h3{
+
+	}
+	p{
+
+	}
+}
+
+/**********************************************/
+/*********************************************/
+/*****FATHERS and FAMILIES STYLES *********************/
+.fathers_and_families_title{
+	h1{
+
+	}
+	p{
+
+	}
+}
+.statistics_bar_fathers_and_families{
+	background-color:#005826;
+	color:$offwhite;
+}
+
+.fathers_and_families fatherhood{
+	display:block;
+}
+
+
+/*********************************************/
+
+.donate_button{
 	float:right;
 	display:block; 
-	width:40%;
+	width:35%;
 	color:$orange;
 	padding:10px;
-	margin-right:10%;
+	margin:10px 12% 0 10%;
 	
 	a{
 	border: 4px solid $orange;
@@ -133,7 +285,7 @@ img{
 	a:hover{
 		background-color:$orange;
 		color:$offwhite;
-		transition:0.3s ease
+		transition:0.3s ease;
 	}
 }
 /**********************************************/
@@ -144,30 +296,34 @@ img{
 	background-color:$dblue;
 	width:100%;
 	height:50px;
+	z-index:1000;
+	border:2px solid $orange;
+	padding-top:7px;
 }
 
 .social_icons{
 	display:block;
 	margin:0 auto;
-	padding:10px;
+	padding:20px;
 	
 }
 .search{
-	padding:100px 0 20px 5%;
+	padding:70px 0 20px 5%;
 	display:block;
 	background-color: $dblue;
 }
 
 .search_bar{
 	display:block;
-	width:90%;
+	width:95%;
+
 	.sbox{
-		width:55%;
+		width:50%;
 		padding:10px;
 	}
 	.sbutton{
-		width:35%;
-		padding:8px 0 9px 0;
+		width:40%;
+		padding:7px 0 10px 0;
 		background-color:#9ba8b2;
 		color:#15466d;
 		font-family: "museo-sans";
@@ -184,13 +340,13 @@ img{
 
     ul{
     	padding:20px 4% 20px 4%;
-    	margin-top:10px;
+    	margin-top:5px;
     }
     h2{
     	display:inline-block;
     	color:$offwhite;
     	font-weight:500;
-		font-size: 1.2em;
+		font-size: 1em;
 		border:2px solid $offwhite;
 		padding:5px;
     }
@@ -209,32 +365,32 @@ img{
 		display:block;
 		color:#faf8f8;
 		padding:10px;
-	}
-	a:hover{
 		font-weight:500;
 		font-size: 1em;
+
+	}
+	a:hover{
 		background-color: $offwhite;
 		color:$dblue;
-		border-right: 15px solid $skyblue;
+		border-right: 5px solid $orange;
 	}
 /**********************************************/
 
 }
 .logo{
-	width:100%;
+	width:50%;
+	max-width: 240px;
 	padding:40px;
 	margin:0 auto;
 
 	img{
-		width:60%;
+		width:100%;
 	}
-
-
 }
 .main_image{
 	background-image: url("../img/main_image.png");
-	background: contain;
-	background-repeat: no-repeat;
+	background-size: cover;
+	background-position:  center center;
 	height:250px;
 	padding:0;
 	margin:0;
@@ -252,7 +408,6 @@ img{
 
 /**********************************************/
 .features{
-	padding:0px 0px 0 0;
 	margin:0px;
 	ul{
 		display:block;
@@ -260,24 +415,27 @@ img{
 		margin:0;
 	}
 	li{
-		margin-top:10px;
-		padding:10px;
+		margin-top:5px;
+		padding:5px;
 		background-color:#f2f0f2;
-	}/*
-	li:first-child:hover{
+	}
+	div{
+		padding:10px;
+	}
+	div:first-child:hover{
 		background-color:#b0cadf;
 	}
-	li:nth-child(2):hover{
+	div:nth-child(2):hover{
 		background-color:#9eb795;
 	}
-	li:nth-child(3):hover{
+	div:nth-child(3):hover{
 		background-color:#dcdfb0;
 	}
-	li:last-child:hover{
+	div:last-child:hover{
 		background-color:#d68a9e;
-	}*/
+	}
 	h1{
-		padding-top:20px;
+		padding-top:10px;
 		color:$lblue;
 		font-weight:700;
 		font-size: 1.3em;
@@ -363,6 +521,163 @@ img{
 
 	}
 }
+@media screen and ( min-width: 600px ){
+	.search{
+		display:none;
+	}
+
+	.fixed_header{
+		background-color:transparent;
+		display:block;
+		position:absolute;
+	}
+	.main_header{
+		background-color:white;
+		.menu_icon{
+			border: 4px solid $dblue;
+			color:$dblue;
+		}
+	}
+	.donate_button{
+		position:absolute;
+		top:500px;
+		right:500px;
+	}
+	.search{
+		position:absolute;
+		background-color:white;
+	}
+
+	.social_div{
+		display:block;
+		position:absolute;
+		background-color:transparent;
+		border:none;
+	}
+	.sidebar_right{
+		height:100%;
+	}
+
+	.sidebar_right_fatherhood{
+		display:block;
+		position:absolute;
+		right:0;
+		top:0;
+	}
+
+	.sidebar_right{
+	display:block;
+	position:fixed;
+	right:0;
+	top:0;
+    background:#0d1a25;
+    width:180px;
+    padding:0;
+    margin:0;
+
+    ul{
+    	padding:10px 10px 10px 10px;
+    }
+    h2{
+    	display:inline-block;
+    	color:$offwhite;
+    	font-weight:500;
+		font-size: 1.4em;
+		border:2px solid $offwhite;
+		padding:5px;
+    }
+    li{
+    	display: block;
+    	text-align:left;
+		font-weight:500;
+		font-size: .7em;
+    }
+
+    li:last-child{
+		border:none;
+	}
+	a{
+		display:block;
+		color:#faf8f8;
+		padding:10px;
+		font-weight:500;
+		font-size: 1em;
+	}
+	a:hover{
+		background-color: $offwhite;
+		color:$dblue;
+		border-right: 5px solid $orange;
+	}
+	}//Ends Side bar right
+
+	.news{
+		display:inline-block;
+
+		div{
+			display:inline-block;
+			width:20%;
+		}
+	}
+	.col_padding{
+    	padding-right:180px;
+   	}
+
+}//end of Media Query
+
+
+
+@media screen and ( min-width: 1000px ){
+
+    .wrapper{
+        position: static;
+        transition: none;
+    }
+    .fixed_header{
+    	display:none;
+    }
+    .social{
+    	display:none;
+    }
+    
+    .menu_icon{
+    	display:none;
+    }
+    .main_navigation{
+    	display:block;
+        position: fixed;
+        transition: none;
+        width: 180px;
+        left: 0;
+        right: auto;
+        padding:none;
+
+        .menu_icon{
+		display:none;
+		}
+
+		li{
+			font-size: .7em;
+		}
+		li:first-child{
+    	display:block;
+    	color:$offwhite;
+    	font-weight:500;
+		font-size: 1em;
+		border:2px solid $offwhite;
+		padding:5px 0 5px 0px;
+    	}
+
+    .backbutton{
+        display: none;
+    	}
+    }
+
+    .col_padding{
+    	padding-left: 200px;
+    }
+
+
+}//end of media query
 
 
 

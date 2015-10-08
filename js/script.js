@@ -25,7 +25,7 @@ $( function(){
     var $body      = $( "body" );
 
     //the breakpoint between desktop and mobile
-    var breakpoint = 600;
+    var breakpoint = 1000;
 
     //a boolean that stores whether or not the offscreen nav is active
     var isOn       = false;
