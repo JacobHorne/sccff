@@ -25,39 +25,49 @@ body ul {
   margin: none;
   padding: none;
 }
-/* line 38, ../scss/style.scss */
+/* line 37, ../scss/style.scss */
 body li {
   margin: none;
   padding: none;
   list-style: none;
   font-style: "museo-sans";
 }
-/* line 45, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 body a {
   text-decoration: none;
 }
-/* line 48, ../scss/style.scss */
+/* line 47, ../scss/style.scss */
 body h1 {
   font-style: "museo-sans";
   font-size: 1.4em;
+  color: #231f20;
 }
 /* line 52, ../scss/style.scss */
 body h2 {
   font-style: "museo-sans";
   font-size: 1.2em;
+  color: #231f20;
 }
-/* line 56, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 body article {
   font-style: "museo-sans";
+  color: #231f20;
 }
-/* line 59, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
 body p {
   font-style: "museo-sans";
   font-size: 1em;
   font-weight: 500;
+  color: #231f20;
+}
+/* line 67, ../scss/style.scss */
+body h3 {
+  font-weight: 700;
+  font-size: 1em;
+  color: #231f20;
 }
 
-/* line 66, ../scss/style.scss */
+/* line 74, ../scss/style.scss */
 img {
   max-width: 100%;
   display: block;
@@ -66,23 +76,33 @@ img {
 }
 
 /*********************************/
-/* line 74, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
+.donate_button_on_image {
+  display: none;
+}
+
+/* line 86, ../scss/style.scss */
+.search_bar2 {
+  display: none;
+}
+
+/* line 89, ../scss/style.scss */
 .main_header {
   display: block;
   background-color: #0d1a25;
   z-index: 1000;
 }
-/* line 78, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 .main_header a {
   color: #faf8f8;
   text-align: left;
 }
-/* line 82, ../scss/style.scss */
+/* line 97, ../scss/style.scss */
 .main_header .backbutton {
   font-size: 1em;
 }
 
-/* line 88, ../scss/style.scss */
+/* line 103, ../scss/style.scss */
 .fixed_header {
   position: fixed;
   background-color: #0d1a25;
@@ -93,18 +113,17 @@ img {
   padding: 0 0 10px 0;
 }
 
-/* line 99, ../scss/style.scss */
+/* line 114, ../scss/style.scss */
 .menu_icon {
   display: block;
   float: left;
 }
-/* line 102, ../scss/style.scss */
+/* line 117, ../scss/style.scss */
 .menu_icon a {
   display: block;
-  text-align: center;
 }
 
-/* line 107, ../scss/style.scss */
+/* line 121, ../scss/style.scss */
 .button {
   border: 4px solid #faf8f8;
   font-style: "museo-sans";
@@ -114,14 +133,14 @@ img {
   margin: 10px 0 0 5%;
 }
 
-/* line 116, ../scss/style.scss */
+/* line 130, ../scss/style.scss */
 .button:hover {
   background-color: #faf8f8;
   color: #0d1a25;
   transition: 0.3s ease;
 }
 
-/* line 122, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .wrapper {
   position: relative;
   transition: left 0.5s;
@@ -130,12 +149,12 @@ img {
   margin: 0 auto;
 }
 
-/* line 130, ../scss/style.scss */
+/* line 144, ../scss/style.scss */
 .cat_nav_state .wrapper {
   left: 100%;
 }
 
-/* line 135, ../scss/style.scss */
+/* line 149, ../scss/style.scss */
 .main_navigation {
   background-color: #39556c;
   display: block;
@@ -150,12 +169,12 @@ img {
   /* this is what animates the transition from closed to open */
   transition: right 0.5s;
 }
-/* line 148, ../scss/style.scss */
+/* line 162, ../scss/style.scss */
 .main_navigation ul {
   padding: 20px 10px 20px 10px;
   margin-top: 10px;
 }
-/* line 152, ../scss/style.scss */
+/* line 166, ../scss/style.scss */
 .main_navigation h2 {
   display: inline-block;
   color: #faf8f8;
@@ -164,7 +183,7 @@ img {
   border: 2px solid #faf8f8;
   padding: 5px;
 }
-/* line 160, ../scss/style.scss */
+/* line 174, ../scss/style.scss */
 .main_navigation li {
   display: block;
   text-align: left;
@@ -172,36 +191,36 @@ img {
   font-size: 1em;
   border-bottom: 1px solid #767577;
 }
-/* line 167, ../scss/style.scss */
+/* line 181, ../scss/style.scss */
 .main_navigation li:hover {
   border-right: 5px solid #f26522;
 }
-/* line 171, ../scss/style.scss */
+/* line 185, ../scss/style.scss */
 .main_navigation li:first-child {
   display: none;
 }
-/* line 174, ../scss/style.scss */
+/* line 188, ../scss/style.scss */
 .main_navigation li:last-child {
   border: none;
 }
-/* line 177, ../scss/style.scss */
+/* line 191, ../scss/style.scss */
 .main_navigation li:last-child:hover {
   border-right: 5px solid #f26522;
 }
-/* line 180, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
 .main_navigation a {
   display: block;
   color: #faf8f8;
   padding: 10px;
 }
-/* line 185, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 .main_navigation a:hover {
   background-color: #faf8f8;
   color: #0d1a25;
   transition: 0.2s ease;
 }
 
-/* line 192, ../scss/style.scss */
+/* line 206, ../scss/style.scss */
 .cat_nav_state .main_navigation {
   /*
       When wrapper also has a class of "cat_nav_state", then the right value is 20%.
@@ -214,59 +233,57 @@ img {
 /**********************************************/
 /*********************************************/
 /*****FATHERHOOD STYLES *********************/
-/* line 208, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
+.fatherhood_title {
+  display: block;
+  margin: 0px 2% 50px 2%;
+}
+/* line 224, ../scss/style.scss */
 .fatherhood_title h1 {
-  font-size: .5em;
   font-weight: 900;
   color: #231f20;
 }
-/* line 213, ../scss/style.scss */
+/* line 228, ../scss/style.scss */
 .fatherhood_title p {
-  font-size: 1em;
-  font-weight: 700;
+  font-weight: 500;
   color: #231f20;
 }
 
-/* line 221, ../scss/style.scss */
+/* line 235, ../scss/style.scss */
 .fatherhood {
-  background-color: black;
+  background-color: #0d1a25;
 }
 
-/* line 225, ../scss/style.scss */
+/* line 239, ../scss/style.scss */
 .map {
   margin: 0 auto;
 }
 
-/* line 230, ../scss/style.scss */
+/* line 243, ../scss/style.scss */
+.program_locations {
+  padding: 0 2% 0 2%;
+}
+/* line 245, ../scss/style.scss */
 .program_locations div {
-  margin-top: 100px;
+  margin-top: 50px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #f5f4f6;
 }
 
 /**********************************************/
 /*********************************************/
 /*****FATHERS and FAMILIES STYLES *********************/
-/* line 255, ../scss/style.scss */
-.statistics_bar_fathers_and_families {
-  background-color: #005826;
-  color: #faf8f8;
-}
-
-/* line 260, ../scss/style.scss */
-.fathers_and_families fatherhood {
-  display: block;
-}
-
 /*********************************************/
-/* line 267, ../scss/style.scss */
+/* line 262, ../scss/style.scss */
 .donate_button {
   float: right;
   display: block;
-  width: 35%;
+  width: 27%;
   color: #f26522;
   padding: 10px;
   margin: 10px 12% 0 10%;
 }
-/* line 275, ../scss/style.scss */
+/* line 270, ../scss/style.scss */
 .donate_button a {
   border: 4px solid #f26522;
   font-style: "museo-sans";
@@ -274,11 +291,11 @@ img {
   font-size: 1.4em;
   padding: 5px 20% 5px 20%;
 }
-/* line 282, ../scss/style.scss */
+/* line 277, ../scss/style.scss */
 .donate_button a:visited {
   color: #f26522;
 }
-/* line 285, ../scss/style.scss */
+/* line 280, ../scss/style.scss */
 .donate_button a:hover {
   background-color: #f26522;
   color: #faf8f8;
@@ -286,44 +303,58 @@ img {
 }
 
 /**********************************************/
-/* line 292, ../scss/style.scss */
+/* line 287, ../scss/style.scss */
 .social_div {
   position: fixed;
   bottom: 0px;
   display: block;
-  background-color: #0d1a25;
   width: 100%;
+  background-color: #faf8f8;
   height: 50px;
   z-index: 1000;
-  border: 2px solid #f26522;
+  border-top: 2px solid #f26522;
   padding-top: 7px;
 }
-
-/* line 304, ../scss/style.scss */
-.social_icons {
+/* line 297, ../scss/style.scss */
+.social_div ul {
   display: block;
+  width: 50%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 2%;
+}
+/* line 303, ../scss/style.scss */
+.social_div li {
+  display: inline-block;
+}
+/* line 306, ../scss/style.scss */
+.social_div a {
+  display: block;
+  width: 70%;
+  height: 50px;
+}
+/* line 311, ../scss/style.scss */
+.social_div img {
+  display: block;
 }
 
-/* line 310, ../scss/style.scss */
+/* line 318, ../scss/style.scss */
 .search {
   padding: 70px 0 20px 5%;
   display: block;
   background-color: #0d1a25;
 }
 
-/* line 316, ../scss/style.scss */
+/* line 324, ../scss/style.scss */
 .search_bar {
   display: block;
-  width: 95%;
+  width: 100%;
 }
-/* line 320, ../scss/style.scss */
+/* line 328, ../scss/style.scss */
 .search_bar .sbox {
   width: 50%;
   padding: 10px;
 }
-/* line 324, ../scss/style.scss */
+/* line 332, ../scss/style.scss */
 .search_bar .sbutton {
   width: 40%;
   padding: 7px 0 10px 0;
@@ -335,19 +366,19 @@ img {
 }
 
 /**********************************************/
-/* line 336, ../scss/style.scss */
+/* line 344, ../scss/style.scss */
 .sidebar_right {
   display: block;
   background: #0d1a25;
   margin-top: 30px;
   /**********************************************/
 }
-/* line 341, ../scss/style.scss */
+/* line 349, ../scss/style.scss */
 .sidebar_right ul {
   padding: 20px 4% 20px 4%;
   margin-top: 5px;
 }
-/* line 345, ../scss/style.scss */
+/* line 353, ../scss/style.scss */
 .sidebar_right h2 {
   display: inline-block;
   color: #faf8f8;
@@ -356,7 +387,7 @@ img {
   border: 2px solid #faf8f8;
   padding: 5px;
 }
-/* line 353, ../scss/style.scss */
+/* line 361, ../scss/style.scss */
 .sidebar_right li {
   display: block;
   text-align: left;
@@ -364,11 +395,11 @@ img {
   font-size: 1em;
   border-bottom: 1px solid #767577;
 }
-/* line 361, ../scss/style.scss */
+/* line 369, ../scss/style.scss */
 .sidebar_right li:last-child {
   border: none;
 }
-/* line 364, ../scss/style.scss */
+/* line 372, ../scss/style.scss */
 .sidebar_right a {
   display: block;
   color: #faf8f8;
@@ -376,26 +407,27 @@ img {
   font-weight: 500;
   font-size: 1em;
 }
-/* line 372, ../scss/style.scss */
+/* line 380, ../scss/style.scss */
 .sidebar_right a:hover {
   background-color: #faf8f8;
   color: #0d1a25;
   border-right: 5px solid #f26522;
 }
 
-/* line 380, ../scss/style.scss */
+/* line 388, ../scss/style.scss */
 .logo {
-  width: 50%;
-  max-width: 240px;
+  width: 60%;
+  max-width: 300px;
   padding: 40px;
   margin: 0 auto;
+  margin-bottom: 50px;
 }
-/* line 386, ../scss/style.scss */
+/* line 395, ../scss/style.scss */
 .logo img {
   width: 100%;
 }
 
-/* line 390, ../scss/style.scss */
+/* line 399, ../scss/style.scss */
 .main_image {
   background-image: url("../img/main_image.png");
   background-size: cover;
@@ -404,89 +436,78 @@ img {
   padding: 0;
   margin: 0;
 }
-/* line 398, ../scss/style.scss */
+/* line 407, ../scss/style.scss */
 .main_image p {
   display: block;
   width: 65%;
   font-weight: 700;
   font-size: 1.7em;
-  color: #faf8f8;
+  color: #2d2d2e;
   padding: 20px;
   line-height: 1em;
+  color: #faf8f8;
 }
 
 /**********************************************/
-/* line 410, ../scss/style.scss */
+/* line 420, ../scss/style.scss */
 .features {
-  margin: 0px;
+  margin: 50px 2% 50px 2%;
 }
-/* line 412, ../scss/style.scss */
+/* line 422, ../scss/style.scss */
 .features ul {
   display: block;
   padding: 0;
   margin: 0;
 }
-/* line 417, ../scss/style.scss */
+/* line 427, ../scss/style.scss */
 .features li {
   margin-top: 5px;
   padding: 5px;
   background-color: #f2f0f2;
 }
-/* line 422, ../scss/style.scss */
+/* line 432, ../scss/style.scss */
 .features div {
   padding: 10px;
 }
-/* line 425, ../scss/style.scss */
+/* line 435, ../scss/style.scss */
 .features div:first-child:hover {
-  background-color: #b0cadf;
+  background-color: #9eb795;
 }
-/* line 428, ../scss/style.scss */
+/* line 438, ../scss/style.scss */
 .features div:nth-child(2):hover {
   background-color: #9eb795;
 }
-/* line 431, ../scss/style.scss */
+/* line 441, ../scss/style.scss */
 .features div:nth-child(3):hover {
-  background-color: #dcdfb0;
+  background-color: #9eb795;
 }
-/* line 434, ../scss/style.scss */
+/* line 444, ../scss/style.scss */
 .features div:last-child:hover {
-  background-color: #d68a9e;
+  background-color: #9eb795;
 }
-/* line 437, ../scss/style.scss */
+/* line 447, ../scss/style.scss */
 .features h1 {
   padding-top: 10px;
   color: #15466d;
   font-weight: 700;
   font-size: 1.3em;
 }
-/* line 443, ../scss/style.scss */
+/* line 453, ../scss/style.scss */
 .features article {
   color: #231f20;
   font-weight: 700;
   font-size: .8em;
   line-height: 1.5em;
 }
-/* line 449, ../scss/style.scss */
-.features a {
-  display: inline-block;
-  color: #a51414;
-  text-align: right;
-  font-size: 1em;
-  font-weight: 900;
-  padding: 5px;
-  border: 1px solid #a51414;
-  margin-left: 68%;
-  margin-top: 10px;
-}
 
 /**********************************************/
-/* line 465, ../scss/style.scss */
+/* line 463, ../scss/style.scss */
 .statistics_bar {
   margin: 20px 0 20px 0;
   padding: 20px 3% 20px 3%;
   background-color: #00bff3;
 }
-/* line 470, ../scss/style.scss */
+/* line 468, ../scss/style.scss */
 .statistics_bar h1 {
   color: #faf8f8;
   font-weight: 900;
@@ -494,109 +515,348 @@ img {
   text-align: center;
 }
 
-/**********************************************/
+/* line 475, ../scss/style.scss */
+.statistics_bar_fatherhood {
+  margin: 50px 0 20px 0;
+  padding: 20px 3% 20px 3%;
+  background-color: #790000;
+}
 /* line 480, ../scss/style.scss */
-.news {
-  margin-bottom: 100px;
+.statistics_bar_fatherhood h1 {
+  color: #faf8f8;
+  font-weight: 900;
+  font-size: 1.6em;
+  text-align: center;
 }
-/* line 482, ../scss/style.scss */
-.news div {
-  padding: 20px;
-  width: 90%;
-  margin: 0 auto;
-}
+
 /* line 488, ../scss/style.scss */
-.news img {
-  width: 100%;
-  margin: 15px 0 15px 0;
+.statistics_bar_fathers_and_families {
+  margin: 50px 0 20px 0;
+  padding: 20px 3% 20px 3%;
+  background-color: #005826;
 }
-/* line 492, ../scss/style.scss */
+/* line 493, ../scss/style.scss */
+.statistics_bar_fathers_and_families h1 {
+  color: #faf8f8;
+  font-weight: 900;
+  font-size: 1.6em;
+  text-align: center;
+}
+
+/**********************************************/
+/* line 504, ../scss/style.scss */
+.news {
+  margin-bottom: 50px 0 50px 0;
+}
+/* line 506, ../scss/style.scss */
+.news div {
+  padding: 0px;
+  width: 100%;
+  margin: 50px 0 40px 0;
+}
+/* line 511, ../scss/style.scss */
+.news img {
+  display: block;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+/* line 518, ../scss/style.scss */
 .news a {
   color: #231f20;
   font-weight: 700;
   font-size: 1.2em;
   margin-top: 20px;
 }
-/* line 498, ../scss/style.scss */
+/* line 524, ../scss/style.scss */
 .news article {
   display: block;
   margin: 20px 0 20px 0;
 }
-/* line 502, ../scss/style.scss */
+/* line 528, ../scss/style.scss */
 .news .readmore {
-  display: inline-block;
+  display: block;
+  text-align: center;
   color: #a51414;
-  text-align: right;
   font-weight: 900;
   font-size: 1em;
   padding: 5px;
   border: 1px solid #a51414;
-  margin-left: 68%;
-  margin-top: 10px;
+  margin-top: 10px 0 20px 0;
+}
+/* line 538, ../scss/style.scss */
+.news .readmore:hover {
+  background-color: #a51414;
+  color: #faf8f8;
+  transition: 0.3s ease;
+}
+/* line 543, ../scss/style.scss */
+.news a {
+  margin: 10px 0 10px 0;
 }
 
-/* line 514, ../scss/style.scss */
+/* line 549, ../scss/style.scss */
 .footer {
   background-color: #0d1a25;
+  margin: 100px 0 60px 0;
   padding: 20px;
   z-index: 3;
 }
-/* line 518, ../scss/style.scss */
+/* line 554, ../scss/style.scss */
 .footer a {
   margin-left: 4%;
   color: #faf8f8;
 }
+/* line 558, ../scss/style.scss */
+.footer a:hover {
+  color: #15466d;
+}
+
+/* line 565, ../scss/style.scss */
+.homebutton {
+  padding: 20px;
+}
+/* line 567, ../scss/style.scss */
+.homebutton h1 {
+  display: inline-block;
+  color: #0d1a25;
+  border: 4px solid #0d1a25;
+  padding: 5px;
+  font-size: 1em;
+}
+/* line 574, ../scss/style.scss */
+.homebutton h1:hover {
+  color: #faf8f8;
+  background-color: #0d1a25;
+  transition: 0.3s ease;
+}
+
+/* line 580, ../scss/style.scss */
+.info {
+  margin-left: 2%;
+}
+/* line 582, ../scss/style.scss */
+.info h1 {
+  color: #f26522;
+}
+/* line 585, ../scss/style.scss */
+.info p {
+  font-size: 1em;
+}
+
+/* line 591, ../scss/style.scss */
+.donate_main {
+  background-color: #0d1a25;
+  padding: 15px;
+  margin: 30px 0 30px 0;
+  margin-left: 2%;
+}
+
+/* line 597, ../scss/style.scss */
+.row1 {
+  padding-top: 10px;
+}
+/* line 599, ../scss/style.scss */
+.row1 img {
+  display: inline-block;
+  max-width: 50px;
+}
+/* line 603, ../scss/style.scss */
+.row1 h1 {
+  display: inline-block;
+  vertical-align: top;
+  color: #faf8f8;
+  border: 4px solid #faf8f8;
+  padding: 5px;
+  margin-top: 0;
+}
+
+/* line 613, ../scss/style.scss */
+.row2 {
+  color: #faf8f8;
+}
+/* line 615, ../scss/style.scss */
+.row2 ul {
+  display: block;
+}
+/* line 618, ../scss/style.scss */
+.row2 li {
+  display: inline-block;
+  border-top: 7px solid #faf8f8;
+}
+/* line 622, ../scss/style.scss */
+.row2 li:first-child {
+  border-top: 7px solid #f26522;
+}
+/* line 625, ../scss/style.scss */
+.row2 p {
+  color: #faf8f8;
+}
+
+/* line 629, ../scss/style.scss */
+.row3 {
+  margin: 20px 0 20px 0;
+  color: #faf8f8;
+}
+/* line 632, ../scss/style.scss */
+.row3 input {
+  background-color: #15466d;
+}
+
+/* line 637, ../scss/style.scss */
+.row4 input {
+  padding: 10px 5px 10px 5px;
+}
+
+/* line 642, ../scss/style.scss */
+.row5 h1 {
+  display: block;
+  width: 50%;
+  color: #f26522;
+  border: 4px solid #f26522;
+  padding: 5px 40px 5px 40px;
+  text-align: center;
+}
+/* line 650, ../scss/style.scss */
+.row5 h1:hover {
+  color: #faf8f8;
+  background-color: #f26522;
+  transition: 0.3s ease;
+}
 
 @media screen and (min-width: 600px) {
-  /* line 525, ../scss/style.scss */
-  .search {
-    display: none;
+  /* line 667, ../scss/style.scss */
+  .donate_button {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    display: block;
+    color: #f26522;
+    float: none;
+  }
+  /* line 675, ../scss/style.scss */
+  .donate_button a {
+    border: 4px solid #f26522;
+    font-style: "museo-sans";
+    font-weight: 700;
+    font-size: 1em;
+    padding: 5px 10% 5px 10%;
   }
 
-  /* line 529, ../scss/style.scss */
+  /* line 683, ../scss/style.scss */
+  .search {
+    position: absolute;
+    top: 25px;
+    right: 50px;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+  }
+  /* line 690, ../scss/style.scss */
+  .search .search_bar {
+    width: 100%;
+  }
+  /* line 693, ../scss/style.scss */
+  .search .search_bar .sbox {
+    float: left;
+    width: 60%;
+    padding: 5px;
+  }
+  /* line 698, ../scss/style.scss */
+  .search .search_bar .sbutton {
+    float: left;
+    width: 20%;
+    background-color: #9ba8b2;
+    color: #15466d;
+    font-family: "museo-sans";
+    font-weight: 900;
+    font-size: .5em;
+  }
+
+  /* line 711, ../scss/style.scss */
+  .main_navigation li {
+    border: none;
+  }
+
+  /* line 716, ../scss/style.scss */
+  .logo {
+    width: 75%;
+    max-width: 300px;
+    padding: 10px;
+    border-bottom: 1px solid #f5f4f6;
+    margin-top: 50px;
+  }
+
+  /* line 724, ../scss/style.scss */
   .fixed_header {
     background-color: transparent;
     display: block;
     position: absolute;
   }
 
-  /* line 534, ../scss/style.scss */
+  /* line 729, ../scss/style.scss */
   .main_header {
     background-color: white;
   }
-  /* line 536, ../scss/style.scss */
+  /* line 731, ../scss/style.scss */
   .main_header .menu_icon {
     border: 4px solid #0d1a25;
     color: #0d1a25;
+    font-size: 1em;
+    padding: 5px 2% 5px 2%;
+    margin-top: 25px;
+  }
+  /* line 738, ../scss/style.scss */
+  .main_header .menu_icon:hover {
+    background-color: #0d1a25;
+    color: #faf8f8;
+    transition: 0.3s ease;
   }
 
-  /* line 541, ../scss/style.scss */
-  .donate_button {
-    position: absolute;
-    top: 500px;
-    right: 500px;
+  /* line 745, ../scss/style.scss */
+  .button {
+    margin: 10px 0 0 2%;
   }
 
-  /* line 546, ../scss/style.scss */
-  .search {
-    position: absolute;
-    background-color: white;
-  }
-
-  /* line 551, ../scss/style.scss */
+  /* line 749, ../scss/style.scss */
   .social_div {
-    display: block;
-    position: absolute;
-    background-color: transparent;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    padding-top: 23px;
     border: none;
+    background-color: transparent;
+  }
+  /* line 757, ../scss/style.scss */
+  .social_div ul {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    padding: 5px;
+  }
+  /* line 763, ../scss/style.scss */
+  .social_div li {
+    display: inline-block;
+  }
+  /* line 766, ../scss/style.scss */
+  .social_div a {
+    display: block;
+    width: 50%;
+  }
+  /* line 770, ../scss/style.scss */
+  .social_div img {
+    display: block;
+    margin: 0 auto;
   }
 
-  /* line 557, ../scss/style.scss */
+  /* line 775, ../scss/style.scss */
   .sidebar_right {
     height: 100%;
   }
 
-  /* line 561, ../scss/style.scss */
+  /* line 779, ../scss/style.scss */
   .sidebar_right_fatherhood {
     display: block;
     position: absolute;
@@ -604,7 +864,7 @@ img {
     top: 0;
   }
 
-  /* line 568, ../scss/style.scss */
+  /* line 786, ../scss/style.scss */
   .sidebar_right {
     display: block;
     position: fixed;
@@ -615,11 +875,11 @@ img {
     padding: 0;
     margin: 0;
   }
-  /* line 578, ../scss/style.scss */
+  /* line 796, ../scss/style.scss */
   .sidebar_right ul {
     padding: 10px 10px 10px 10px;
   }
-  /* line 581, ../scss/style.scss */
+  /* line 799, ../scss/style.scss */
   .sidebar_right h2 {
     display: inline-block;
     color: #faf8f8;
@@ -628,18 +888,15 @@ img {
     border: 2px solid #faf8f8;
     padding: 5px;
   }
-  /* line 589, ../scss/style.scss */
+  /* line 807, ../scss/style.scss */
   .sidebar_right li {
     display: block;
     text-align: left;
     font-weight: 500;
     font-size: .7em;
-  }
-  /* line 596, ../scss/style.scss */
-  .sidebar_right li:last-child {
     border: none;
   }
-  /* line 599, ../scss/style.scss */
+  /* line 814, ../scss/style.scss */
   .sidebar_right a {
     display: block;
     color: #faf8f8;
@@ -647,51 +904,82 @@ img {
     font-weight: 500;
     font-size: 1em;
   }
-  /* line 606, ../scss/style.scss */
+  /* line 821, ../scss/style.scss */
   .sidebar_right a:hover {
     background-color: #faf8f8;
     color: #0d1a25;
     border-right: 5px solid #f26522;
   }
 
-  /* line 613, ../scss/style.scss */
-  .news {
-    display: inline-block;
-  }
-  /* line 616, ../scss/style.scss */
-  .news div {
-    display: inline-block;
-    width: 20%;
+  /* line 828, ../scss/style.scss */
+  .info {
+    width: 45%;
+    float: left;
   }
 
-  /* line 621, ../scss/style.scss */
+  /* line 832, ../scss/style.scss */
+  .donate_main {
+    margin-top: 10px;
+    width: 45%;
+    float: left;
+  }
+
+  /* line 838, ../scss/style.scss */
   .col_padding {
     padding-right: 180px;
   }
+
+  /* line 842, ../scss/style.scss */
+  .news div {
+    float: left;
+    width: 25%;
+    padding: 10px;
+    margin-left: 3%;
+  }
+  /* line 848, ../scss/style.scss */
+  .news img {
+    display: block;
+    width: 100%;
+    max-width: 500px;
+  }
+
+  /* line 854, ../scss/style.scss */
+  .footer {
+    margin-bottom: 0px;
+  }
+
+  /* line 857, ../scss/style.scss */
+  .donate_button_main {
+    display: none;
+  }
 }
 @media screen and (min-width: 1000px) {
-  /* line 631, ../scss/style.scss */
+  /* line 872, ../scss/style.scss */
   .wrapper {
     position: static;
     transition: none;
   }
 
-  /* line 635, ../scss/style.scss */
+  /* line 876, ../scss/style.scss */
   .fixed_header {
     display: none;
   }
 
-  /* line 638, ../scss/style.scss */
-  .social {
-    display: none;
+  /* line 879, ../scss/style.scss */
+  .social_div {
+    position: relative;
+    top: 0px;
+    right: 155px;
+    z-index: 1000;
+    padding-top: 23px;
   }
 
-  /* line 642, ../scss/style.scss */
+  /* line 886, ../scss/style.scss */
   .menu_icon {
     display: none;
   }
 
-  /* line 645, ../scss/style.scss */
+  /* line 890, ../scss/style.scss */
   .main_navigation {
     display: block;
     position: fixed;
@@ -701,30 +989,52 @@ img {
     right: auto;
     padding: none;
   }
-  /* line 654, ../scss/style.scss */
+  /* line 899, ../scss/style.scss */
   .main_navigation .menu_icon {
     display: none;
   }
-  /* line 658, ../scss/style.scss */
+  /* line 903, ../scss/style.scss */
   .main_navigation li {
     font-size: .7em;
   }
-  /* line 661, ../scss/style.scss */
+  /* line 906, ../scss/style.scss */
   .main_navigation li:first-child {
-    display: block;
+    display: inline-block;
     color: #faf8f8;
     font-weight: 500;
     font-size: 1em;
     border: 2px solid #faf8f8;
-    padding: 5px 0 5px 0px;
+    padding: 5px 15px 5px 10px;
   }
-  /* line 670, ../scss/style.scss */
+  /* line 915, ../scss/style.scss */
   .main_navigation .backbutton {
     display: none;
   }
 
-  /* line 675, ../scss/style.scss */
+  /* line 920, ../scss/style.scss */
   .col_padding {
     padding-left: 200px;
+  }
+
+  /* line 923, ../scss/style.scss */
+  .donate_button_main {
+    position: absolute;
+    top: 70px;
+    right: 220px;
+    display: block;
+    color: #f26522;
+    float: none;
+  }
+  /* line 931, ../scss/style.scss */
+  .donate_button_main a {
+    border: 4px solid #f26522;
+    font-style: "museo-sans";
+    font-weight: 700;
+    font-size: 1em;
+    padding: 5px 20px 5px 20px;
+  }
+  /* line 938, ../scss/style.scss */
+  .donate_button_main a:visited {
+    color: #f26522;
   }
 }
