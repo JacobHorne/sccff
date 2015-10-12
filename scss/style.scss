@@ -679,11 +679,16 @@ img{
 		font-size:1em;
 		padding:5px 10% 5px 10%;
 		}
+		a:hover{
+			color:$offwhite;
+			background-color:$orange;
+			transition: 0.3s ease;
+		}
 	}
 	.search{
 	position:absolute;
 	top:25px;
-	right:50px;
+	right:200px;
 	padding:0;
 	margin:0;
 	background-color:transparent;
@@ -697,12 +702,12 @@ img{
 			}
 			.sbutton{
 				float:left;
-				width: 20%;
+				width: 25%;
 				background-color:#9ba8b2;
 				color:#15466d;
 				font-family: "museo-sans";
 				font-weight: 900;
-				font-size: .5em;
+				font-size: .7em;
 			}
 		}
 	}
@@ -937,6 +942,11 @@ img{
 		}
 		a:visited{
 			color:$orange;
+		}
+		a:hover{
+			color:$offwhite;
+			background-color:$orange;
+			transition: 0.3s ease;
 		}
 	}
 

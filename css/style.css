@@ -743,43 +743,49 @@ img {
     font-size: 1em;
     padding: 5px 10% 5px 10%;
   }
+  /* line 682, ../scss/style.scss */
+  .donate_button a:hover {
+    color: #faf8f8;
+    background-color: #f26522;
+    transition: 0.3s ease;
+  }
 
-  /* line 683, ../scss/style.scss */
+  /* line 688, ../scss/style.scss */
   .search {
     position: absolute;
     top: 25px;
-    right: 50px;
+    right: 200px;
     padding: 0;
     margin: 0;
     background-color: transparent;
   }
-  /* line 690, ../scss/style.scss */
+  /* line 695, ../scss/style.scss */
   .search .search_bar {
     width: 100%;
   }
-  /* line 693, ../scss/style.scss */
+  /* line 698, ../scss/style.scss */
   .search .search_bar .sbox {
     float: left;
     width: 60%;
     padding: 5px;
   }
-  /* line 698, ../scss/style.scss */
+  /* line 703, ../scss/style.scss */
   .search .search_bar .sbutton {
     float: left;
-    width: 20%;
+    width: 25%;
     background-color: #9ba8b2;
     color: #15466d;
     font-family: "museo-sans";
     font-weight: 900;
-    font-size: .5em;
+    font-size: .7em;
   }
 
-  /* line 711, ../scss/style.scss */
+  /* line 716, ../scss/style.scss */
   .main_navigation li {
     border: none;
   }
 
-  /* line 716, ../scss/style.scss */
+  /* line 721, ../scss/style.scss */
   .logo {
     width: 75%;
     max-width: 300px;
@@ -788,18 +794,18 @@ img {
     margin-top: 50px;
   }
 
-  /* line 724, ../scss/style.scss */
+  /* line 729, ../scss/style.scss */
   .fixed_header {
     background-color: transparent;
     display: block;
     position: absolute;
   }
 
-  /* line 729, ../scss/style.scss */
+  /* line 734, ../scss/style.scss */
   .main_header {
     background-color: white;
   }
-  /* line 731, ../scss/style.scss */
+  /* line 736, ../scss/style.scss */
   .main_header .menu_icon {
     border: 4px solid #0d1a25;
     color: #0d1a25;
@@ -807,19 +813,19 @@ img {
     padding: 5px 2% 5px 2%;
     margin-top: 25px;
   }
-  /* line 738, ../scss/style.scss */
+  /* line 743, ../scss/style.scss */
   .main_header .menu_icon:hover {
     background-color: #0d1a25;
     color: #faf8f8;
     transition: 0.3s ease;
   }
 
-  /* line 745, ../scss/style.scss */
+  /* line 750, ../scss/style.scss */
   .button {
     margin: 10px 0 0 2%;
   }
 
-  /* line 749, ../scss/style.scss */
+  /* line 754, ../scss/style.scss */
   .social_div {
     position: relative;
     top: 0px;
@@ -829,34 +835,34 @@ img {
     border: none;
     background-color: transparent;
   }
-  /* line 757, ../scss/style.scss */
+  /* line 762, ../scss/style.scss */
   .social_div ul {
     display: block;
     width: 50%;
     margin: 0 auto;
     padding: 5px;
   }
-  /* line 763, ../scss/style.scss */
+  /* line 768, ../scss/style.scss */
   .social_div li {
     display: inline-block;
   }
-  /* line 766, ../scss/style.scss */
+  /* line 771, ../scss/style.scss */
   .social_div a {
     display: block;
     width: 50%;
   }
-  /* line 770, ../scss/style.scss */
+  /* line 775, ../scss/style.scss */
   .social_div img {
     display: block;
     margin: 0 auto;
   }
 
-  /* line 775, ../scss/style.scss */
+  /* line 780, ../scss/style.scss */
   .sidebar_right {
     height: 100%;
   }
 
-  /* line 779, ../scss/style.scss */
+  /* line 784, ../scss/style.scss */
   .sidebar_right_fatherhood {
     display: block;
     position: absolute;
@@ -864,7 +870,7 @@ img {
     top: 0;
   }
 
-  /* line 786, ../scss/style.scss */
+  /* line 791, ../scss/style.scss */
   .sidebar_right {
     display: block;
     position: fixed;
@@ -875,11 +881,11 @@ img {
     padding: 0;
     margin: 0;
   }
-  /* line 796, ../scss/style.scss */
+  /* line 801, ../scss/style.scss */
   .sidebar_right ul {
     padding: 10px 10px 10px 10px;
   }
-  /* line 799, ../scss/style.scss */
+  /* line 804, ../scss/style.scss */
   .sidebar_right h2 {
     display: inline-block;
     color: #faf8f8;
@@ -888,7 +894,7 @@ img {
     border: 2px solid #faf8f8;
     padding: 5px;
   }
-  /* line 807, ../scss/style.scss */
+  /* line 812, ../scss/style.scss */
   .sidebar_right li {
     display: block;
     text-align: left;
@@ -896,7 +902,7 @@ img {
     font-size: .7em;
     border: none;
   }
-  /* line 814, ../scss/style.scss */
+  /* line 819, ../scss/style.scss */
   .sidebar_right a {
     display: block;
     color: #faf8f8;
@@ -904,68 +910,68 @@ img {
     font-weight: 500;
     font-size: 1em;
   }
-  /* line 821, ../scss/style.scss */
+  /* line 826, ../scss/style.scss */
   .sidebar_right a:hover {
     background-color: #faf8f8;
     color: #0d1a25;
     border-right: 5px solid #f26522;
   }
 
-  /* line 828, ../scss/style.scss */
+  /* line 833, ../scss/style.scss */
   .info {
     width: 45%;
     float: left;
   }
 
-  /* line 832, ../scss/style.scss */
+  /* line 837, ../scss/style.scss */
   .donate_main {
     margin-top: 10px;
     width: 45%;
     float: left;
   }
 
-  /* line 838, ../scss/style.scss */
+  /* line 843, ../scss/style.scss */
   .col_padding {
     padding-right: 180px;
   }
 
-  /* line 842, ../scss/style.scss */
+  /* line 847, ../scss/style.scss */
   .news div {
     float: left;
     width: 25%;
     padding: 10px;
     margin-left: 3%;
   }
-  /* line 848, ../scss/style.scss */
+  /* line 853, ../scss/style.scss */
   .news img {
     display: block;
     width: 100%;
     max-width: 500px;
   }
 
-  /* line 854, ../scss/style.scss */
+  /* line 859, ../scss/style.scss */
   .footer {
     margin-bottom: 0px;
   }
 
-  /* line 857, ../scss/style.scss */
+  /* line 862, ../scss/style.scss */
   .donate_button_main {
     display: none;
   }
 }
 @media screen and (min-width: 1000px) {
-  /* line 872, ../scss/style.scss */
+  /* line 877, ../scss/style.scss */
   .wrapper {
     position: static;
     transition: none;
   }
 
-  /* line 876, ../scss/style.scss */
+  /* line 881, ../scss/style.scss */
   .fixed_header {
     display: none;
   }
 
-  /* line 879, ../scss/style.scss */
+  /* line 884, ../scss/style.scss */
   .social_div {
     position: relative;
     top: 0px;
@@ -974,12 +980,12 @@ img {
     padding-top: 23px;
   }
 
-  /* line 886, ../scss/style.scss */
+  /* line 891, ../scss/style.scss */
   .menu_icon {
     display: none;
   }
 
-  /* line 890, ../scss/style.scss */
+  /* line 895, ../scss/style.scss */
   .main_navigation {
     display: block;
     position: fixed;
@@ -989,15 +995,15 @@ img {
     right: auto;
     padding: none;
   }
-  /* line 899, ../scss/style.scss */
+  /* line 904, ../scss/style.scss */
   .main_navigation .menu_icon {
     display: none;
   }
-  /* line 903, ../scss/style.scss */
+  /* line 908, ../scss/style.scss */
   .main_navigation li {
     font-size: .7em;
   }
-  /* line 906, ../scss/style.scss */
+  /* line 911, ../scss/style.scss */
   .main_navigation li:first-child {
     display: inline-block;
     color: #faf8f8;
@@ -1006,17 +1012,17 @@ img {
     border: 2px solid #faf8f8;
     padding: 5px 15px 5px 10px;
   }
-  /* line 915, ../scss/style.scss */
+  /* line 920, ../scss/style.scss */
   .main_navigation .backbutton {
     display: none;
   }
 
-  /* line 920, ../scss/style.scss */
+  /* line 925, ../scss/style.scss */
   .col_padding {
     padding-left: 200px;
   }
 
-  /* line 923, ../scss/style.scss */
+  /* line 928, ../scss/style.scss */
   .donate_button_main {
     position: absolute;
     top: 70px;
@@ -1025,7 +1031,7 @@ img {
     color: #f26522;
     float: none;
   }
-  /* line 931, ../scss/style.scss */
+  /* line 936, ../scss/style.scss */
   .donate_button_main a {
     border: 4px solid #f26522;
     font-style: "museo-sans";
@@ -1033,8 +1039,14 @@ img {
     font-size: 1em;
     padding: 5px 20px 5px 20px;
   }
-  /* line 938, ../scss/style.scss */
+  /* line 943, ../scss/style.scss */
   .donate_button_main a:visited {
     color: #f26522;
+  }
+  /* line 946, ../scss/style.scss */
+  .donate_button_main a:hover {
+    color: #faf8f8;
+    background-color: #f26522;
+    transition: 0.3s ease;
   }
 }
